@@ -611,6 +611,30 @@ button {
   ;
 }
 
+.app-image {
+  position: relative;
+}
+
+.app-image-text {
+  position: absolute;
+  background-color: var(--accent-color);
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--icon-color);
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  opacity: 0;
+}
+
+.app-image-text:hover {
+  overflow: 100%;
+}
+
 .app-title {
   margin-top: 0;
   margin-bottom: 8px;
