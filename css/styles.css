@@ -87,7 +87,6 @@ button {
 .head-nav {
   display: flex;
   align-items: center;
-  column-gap: 40px;
 }
 
 .head-logo {
@@ -113,9 +112,6 @@ button {
 }
 
 .head-items {
-  margin-left: 30px;
-  margin-top: 0;
-  gap: 40px;
   color: #404bbf;
   position: relative;
 }
@@ -178,7 +174,6 @@ button {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  margin-left: 30px;
   margin-top: 0;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -198,6 +193,7 @@ button {
   background-color: var(--title-color);
   max-width: 1440px;
   height: 600px;
+  margin: 0 auto;
   padding: 188px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img.jpg);
   background-repeat: no-repeat;
@@ -341,7 +337,6 @@ button {
   color: var(--title-color);
   text-align: center;
   text-transform: capitalize;
-  margin-top: 120px;
   margin-bottom: 72px
 }
 
@@ -411,7 +406,6 @@ button {
 }
 
 .social-menu {
-  width: 232px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -502,7 +496,6 @@ button {
 /* ------- FOOTER ------- */
 
 .footer {
-  width: 1440px;
   background-color: var(--title-color);
   padding: 100px 0 100px;
 }
@@ -646,7 +639,6 @@ button {
   justify-content: center;
   align-items: center;
   gap: 48px 24px;
-  padding-bottom: 120px;
 }
 
 .app-items {
