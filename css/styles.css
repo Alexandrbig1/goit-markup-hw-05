@@ -608,7 +608,9 @@ button {
   justify-content: center;
   gap: 24px;
   margin-bottom: 72px;
+}
 
+.portfolio-items {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -647,9 +649,12 @@ button {
   padding-bottom: 120px;
 }
 
+.app-items {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .app-link {
   display: block;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .app-link:hover,
