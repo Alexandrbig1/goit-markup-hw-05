@@ -65,9 +65,15 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-main">Effective Solutions for Your Business</h1>
-          <button type="button" data-modal-open="" class="hero-btn">
+
+          <button type="button" class="hero-btn" data-modal-open>
             Order Service
           </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button data-modal-close class="modal-close">x</button>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -434,6 +440,21 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
+
+    <!--- script --->
+    <script>
+      const refs = {
+        openModalBtn: document.querySelector('[data-modal-open]'),
+        closeModalBtn: document.querySelector('[data-modal-close]'),
+        modal: document.querySelector('[data-modal]'),
+      };
+
+      refs.openModalBtn.addEventListener('click', toggleModal);
+      refs.closeModalBtn.addEventListener('click', toggleModal);
+
+      function toggleModal() {
+        refs.modal.classList.toggle('is-hidden');
+      }
+    </script>
   </body>
 </html>

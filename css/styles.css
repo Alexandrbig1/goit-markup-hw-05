@@ -162,7 +162,7 @@ button {
 
 .head-address-items {
   margin-top: 0;
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backgroundcolor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-address-items:nth-last-child() {
@@ -194,6 +194,7 @@ button {
 /* ----- hero ----- */
 
 .hero {
+  position: relative;
   background-color: var(--title-color);
   max-width: 1440px;
   height: 600px;
@@ -240,6 +241,45 @@ button {
 .hero-btn:hover,
 .hero-btn:focus {
   background-color: #404BBF;
+}
+
+.backdrop {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 408px;
+  height: 586px;
+  padding: 15px;
+
+  background: #FCFCFC;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.modal-close {
+  position: inherit;
+  top: 24px;
+  right: 24px;
+
+  background-color: #E7E9FC;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: var(--title-color);
+  text-align: center;
 }
 
 /* ----- about ----- */
@@ -554,8 +594,6 @@ button {
 
 /* ------- PORTFOLIO ------- */
 
-/* ----- header ----- */
-
 /* ------- MAIN ------- */
 
 /* ----- features ------ */
@@ -570,11 +608,6 @@ button {
   gap: 24px;
   margin-bottom: 72px;
 }
-
-/* .portfolio-items {
-  padding-top: 96px;
-  padding-bottom: 72px;
-} */
 
 .portfolio-btn {
   font-weight: 500;
@@ -622,10 +655,16 @@ button {
 
 .app-image {
   position: relative;
+
 }
 
 .app-image-text {
   position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
   background-color: var(--accent-color);
   text-align: center;
   font-style: normal;
@@ -634,6 +673,7 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--icon-color);
+
   padding-top: 40px;
   padding-left: 32px;
   padding-right: 32px;
@@ -641,6 +681,7 @@ button {
 }
 
 .app-image-text:hover {
+  opacity: 1;
   overflow: 100%;
 }
 
@@ -667,5 +708,3 @@ button {
   border: 1px solid #e7e9fc;
   border-top: none;
 }
-
-/* ------- FOOTER ------- */
