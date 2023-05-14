@@ -698,7 +698,19 @@ button {
   opacity: 1;
   overflow: 100%;
   transition: 250ms;
-  transform: translateY(0%);
+
+  animation-name: open;
+  animation-duration: 1s;
+}
+
+@keyframes open {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 .app-title {
