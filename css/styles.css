@@ -273,6 +273,8 @@ button {
   border-radius: 4px;
 }
 
+.modal-icon {}
+
 .modal-close {
   position: inherit;
   top: 24px;
@@ -282,7 +284,6 @@ button {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--title-color);
-  text-align: center;
 }
 
 /* ----- about ----- */
@@ -687,9 +688,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--icon-color);
 
-  padding-top: 40px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 40px 32px;
   opacity: 0;
 }
 
