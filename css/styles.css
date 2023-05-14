@@ -195,7 +195,6 @@ button {
 /* ----- hero ----- */
 
 .hero {
-  position: relative;
   background-color: var(--title-color);
   max-width: 1440px;
   height: 600px;
@@ -208,6 +207,7 @@ button {
 }
 
 .hero-main {
+  position: relative;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -246,6 +246,7 @@ button {
 }
 
 .backdrop {
+  position: fixed;
   left: 0;
   top: 0;
   width: 100%;
@@ -259,7 +260,7 @@ button {
 }
 
 .modal {
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
