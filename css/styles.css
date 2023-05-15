@@ -654,14 +654,9 @@ button {
 
 .app-items {}
 
-.app-image-container {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16),
-    0px 2px 1px rgba(46, 47, 66, 0.08);
-}
 
-.app-image-container:hover .app-image-text,
-.app-image-container .app-image-text:focus {
+.app-link:hover .app-image-text,
+.app-link:focus .app-image-text {
   opacity: 1;
   overflow: 100%;
   transform: translateY(0%);
@@ -670,6 +665,9 @@ button {
 
 .app-link {
   display: block;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .app-image {
