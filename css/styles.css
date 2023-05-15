@@ -113,7 +113,6 @@ button {
 
 .head-items {
   color: #404bbf;
-
 }
 
 .head-items:nth-last-child() {
@@ -129,6 +128,7 @@ button {
   color: var(--title-color);
   padding: 24px 0;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .active {
@@ -144,7 +144,6 @@ button {
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-link:hover,
@@ -183,6 +182,7 @@ button {
   margin-top: 0;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-contacts:hover,
@@ -271,7 +271,6 @@ button {
 
   background: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
 }
 
 .modal-icon {}
@@ -613,12 +612,7 @@ button {
   margin-bottom: 72px;
 }
 
-.portfolio-items {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+.portfolio-items {}
 
 .portfolio-btn {
   font-weight: 500;
@@ -631,6 +625,7 @@ button {
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   padding: 12px 24px;
+
 }
 
 .portfolio-btn:hover,
@@ -639,6 +634,11 @@ button {
   color: var(--main-color);
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ----- app ----- */
@@ -697,8 +697,9 @@ button {
 .app-image-text:focus {
   opacity: 1;
   overflow: 100%;
-  transition: 250ms;
 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms;
   animation-name: open;
   animation-duration: 1s;
 }
